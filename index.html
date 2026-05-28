@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">She Can Foundation</h2>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="dark-btn" onclick="darkMode()">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-text">
+      <h1>Empowering Women For A Better Tomorrow</h1>
+
+      <p>
+        Supporting education, leadership, and equal opportunities for women everywhere.
+      </p>
+
+      <button onclick="showMessage()">Join Our Mission</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="scf.jpg" alt="Women Empowerment">
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+
+    <p>
+      She Can Foundation is a non-profit organization dedicated to empowering women through education, mentorship, skill development, and career opportunities.
+      We believe every woman deserves the chance to grow, lead, and inspire.
+    </p>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="impact" id="impact">
+
+    <div class="card">
+      <h2>500+</h2>
+      <p>Women Empowered</p>
+    </div>
+
+    <div class="card">
+      <h2>100+</h2>
+      <p>Workshops Conducted</p>
+    </div>
+
+    <div class="card">
+      <h2>50+</h2>
+      <p>Communities Reached</p>
+    </div>
+
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <h2>“When women rise, society rises.”</h2>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Get Involved</h2>
+
+    <p>
+      Become a volunteer, mentor, or supporter and help create meaningful change.
+    </p>
+
+    <button onclick="showmessage()">Contact Us</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 She Can Foundation | All Rights Reserved</p>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/shecanfoundation.ngo">Instagram</a>
+      <a href="https://www.linkedin.com/company/shecanfoundation">LinkedIn</a>
+      
+    </div>
+  </footer>
+
+  <script>
+
+    function showMessage(){
+      alert("Thank you for supporting She Can Foundation 💖");
+    }
+    function showmessage(){
+      alert("Thank you for contacting us😊");
+    }
+
+    function darkMode(){
+      document.body.classList.toggle("dark");
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fff7fa;
+    color: #333;
+    transition: 0.4s ease;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+    color: #ff4f81;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin: 0 12px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #ff4f81;
+}
+
+.dark-btn{
+    background: #ff4f81;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Hero Section */
+header{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    background: linear-gradient(to right, #ff4f81, #ff758c);
+    color: white;
+    gap: 40px;
+}
+
+.hero-text{
+    flex: 1;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero-text h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-text button,
+.contact button{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #ff4f81;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover,
+.contact button:hover{
+    transform: scale(1.05);
+}
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* About */
+.about{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2,
+.contact h2{
+    font-size: 40px;
+    color: #ff4f81;
+    margin-bottom: 20px;
+}
+
+.about p,
+.contact p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* Impact Cards */
+.impact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 30px;
+    padding: 20px 10% 80px;
+}
+
+.card{
+    background: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h2{
+    color: #ff4f81;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Quote Section */
+.quote-section{
+    background: #ff4f81;
+    color: white;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.quote-section h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Contact */
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.socials{
+    margin-top: 15px;
+}
+
+.socials a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Dark Mode */
+.dark{
+    background: #121212;
+    color: white;
+}
+
+.dark nav{
+    background: #1f1f1f;
+}
+
+.dark .nav-links a{
+    color: white;
+}
+
+.dark .card{
+    background: #1f1f1f;
+    color: white;
+}
+
+.dark .about,
+.dark .contact{
+    background: #121212;
+}
+
+.dark footer{
+    background: black;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width: 900px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .quote-section h2{
+        font-size: 26px;
+    }
+
+}
